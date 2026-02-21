@@ -1,5 +1,7 @@
 ## Getting started
 
+NOTE: need to be able to deploy before deno deploy creates databases
+
 - Clone the repo
 - Create the app
 - Add a database
