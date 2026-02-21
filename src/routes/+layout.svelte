@@ -15,17 +15,24 @@
 	/>
 </svelte:head>
 
-{#if data.user}
-	<nav class="main-nav">
-		<div class="nav-container">
-			<div class="nav-user">
+<nav class="main-nav">
+	<ul class="nav-container">
+		{#if data.user}
+			<li class="nav-user">
 				<span class="user-name">{data.user.name || data.user.email}</span>
 				<form method="POST" action="/logout" class="logout-form">
 					<button type="submit" class="logout-btn">Sign Out</button>
 				</form>
-			</div>
-		</div>
-	</nav>
-{/if}
+			</li>
+		{:else}
+			<li class="nav-login">
+				<a href="/login">Log in</a>
+			</li>
+			<li class="nav-account">
+				<a href="/register">Create an account</a>
+			</li>
+		{/if}
+	</ul>
+</nav>
 
 {@render children()}
