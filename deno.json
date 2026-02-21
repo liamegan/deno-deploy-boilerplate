@@ -6,7 +6,7 @@
 	"nodeModulesDir": "auto",
 	"tasks": {
 		"dev": "deno run -A npm:vite dev",
-		"build": "deno run -A npm:prisma generate && deno run -A npm:vite build",
+		"build": "deno run -A npm:prisma migrate && deno run -A npm:prisma generate && deno run -A npm:vite build",
 		"preview": "deno run -A npm:vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"db:generate": "deno run -A npm:prisma generate",
