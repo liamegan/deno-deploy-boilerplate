@@ -16,6 +16,10 @@ export const load: PageServerLoad = async ({ locals }) => {
 		}
 	}
 
+	console.log(Deno.env.toObject());
+	console.log(Deno.env.get('TEST_ENV'));
+	console.log(Deno.env.get('PGHOST'));
+
 	// Not logged in - return empty data for landing page
 	return {
 		user: null,

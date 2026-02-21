@@ -19,8 +19,6 @@ model User {
   updatedAt    DateTime  @updatedAt
   
   sessions     Session[]
-  recipes      Recipe[]
-  ingredients  Ingredient[]
 }
 
 model Session {
