@@ -1,13 +1,13 @@
 {
 	"deploy": {
-    "org": "liamegan",
-    "app": "deno-deploy-boilerplate"
-  },
+		"org": "liamegan",
+		"app": "deno-deploy-boilerplate"
+	},
 	"entrypoint": ".deno-deploy/server.ts",
 	"nodeModulesDir": "auto",
 	"tasks": {
 		"dev": "deno run -A npm:vite dev",
-		"build": "deno run -A npm:prisma generate && deno run -A npm:vite build && deno run -A scripts/create-server-entry.ts",
+		"build": "deno run -A npm:prisma generate && deno run -A npm:vite build",
 		"preview": "deno run -A npm:vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"db:generate": "deno run -A npm:prisma generate",
