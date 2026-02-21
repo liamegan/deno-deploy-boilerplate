@@ -3,7 +3,6 @@
 		"org": "liamegan",
 		"app": "deno-deploy-boilerplate"
 	},
-	"entrypoint": ".deno-deploy/server.ts",
 	"nodeModulesDir": "auto",
 	"tasks": {
 		"dev": "deno run -A npm:vite dev",
