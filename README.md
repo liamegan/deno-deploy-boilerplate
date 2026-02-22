@@ -10,3 +10,6 @@ NOTE: need to be able to deploy before deno deploy creates databases
 - Deno install
 - deno run -A npm:prisma generate
 - deno task --tunnel dev
+
+- deno run --tunnel db:migrate
+- Push?

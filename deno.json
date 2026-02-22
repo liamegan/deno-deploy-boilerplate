@@ -26,6 +26,7 @@
 	"imports": {
 		"$lib": "./src/lib",
 		"$lib/*": "./src/lib/*",
+		"$gentypes/": "./.svelte-kit/types/",
 		"@std/assert": "jsr:@std/assert@^1.0.19",
 		"string_decoder": "node:string_decoder",
 		"events": "node:events",
